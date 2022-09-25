@@ -4,21 +4,18 @@ public class PowerOfTwo
 {
     public void printPower(int power)
 	{
-		if (power < 0) 
+		if (power < 0)
 		{
             System.out.println("too much power");
-		}
-		else
+        }
+		else 
 		{
-			int i = 1;
-			while(i <= power)
+            int i = 0;
+            while (i <= power) 
 			{
-				if (power % i == 0)
-				{
-					System.out.println(i);
-				}
-				i++;
-			}
+                System.out.println((int) Math.pow(2, i));
+                i++;
+            }
 		}
 	}
 }
